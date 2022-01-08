@@ -26,10 +26,6 @@ pipeline {
       }      
       stage('git secret check'){
         steps{
-	  script{
-		echo 'running trufflehog to check project history for secrets'
-		sh 'trufflehog --regex --entropy=False --max_depth=3 https://github.com/web-codegrammer/DevSecops-Test-Pipeline'
-	  }
         }
       }
       stage('SCA'){
