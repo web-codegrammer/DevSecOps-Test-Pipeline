@@ -1,4 +1,4 @@
-# DevSecOps pipeline for Python project
+# DevSecOps pipeline for Python Web App
 
 A Jenkins end-to-end DevSecOps pipeline for Python web application, hosted on AWS Ubuntu 18.04
 
@@ -6,7 +6,7 @@ A Jenkins end-to-end DevSecOps pipeline for Python web application, hosted on AW
 
 <img alt="psparchitecture" src="https://user-images.githubusercontent.com/11514346/71579758-effe5c80-2af5-11ea-97ae-dd6c91b02312.PNG">
 
-*Disclaimer: This project is for demonstration purpose with surface level checks only, do not use it as-is for production*
+*Note: This project is for demonstration purpose with surface level checks only, do not use as it is on production*
 
 > **Checkout project** - check out python application project repository with XSS vulnerability
 
@@ -25,7 +25,7 @@ A Jenkins end-to-end DevSecOps pipeline for Python web application, hosted on AW
 > **WAF** - deploy application with WAF which will filter malicious requests according to OWASP core ruleset
 
 
-## Installation steps
+## Installation Steps
 
 1. Clone this repository to your Ubuntu Server (t2-medium recommended)
 ```
@@ -50,7 +50,7 @@ http://your-jenkins-server:8080/
 5. Use the temporary credentials provided on the logs to login. Change your password!
 6. Go to the python pipeline project dashboard, click on "Build Now" button to start it off. 
 
-## Setting up a Jenkins Pipeline project manually
+## Setting up a Jenkins Pipeline project manually on Local Machine
  
 **A sample pipeline is already provided through automation**
 
@@ -61,17 +61,13 @@ http://your-jenkins-server:8080/
 5. You will be brought to the Dashboard of your Pipeline project, click on "Build Now" button to start off the pipeline.
 
 
-**To do list:**
+**To do checks:**
 - [x] Select appropriate security tools and sample python project
 - [x] Set up Jenkins server using docker (Dockerfile) and pipeline as code (Jenkinsfile) to run the checks
 - [x] Use ansible to create AWS ec2 test instance, configure the environment, and interact with it
 - [x] Hook up the web-app with ~~nginx~~+modsecurity providing WAF, ~~DDoS protection~~, reverse proxy capabilities
 - [x] Bootstrap with Jenkins API/configfile to setup and automatically create the pipeline job
 - [x] Carry out authenticated DAST scan on the python web app 
-
-## Demo
-
-![finalgif4](https://user-images.githubusercontent.com/11514346/72058904-db298200-32c8-11ea-9a15-46c179c4a0fb.gif)
 
 ### Report
 
