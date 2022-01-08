@@ -77,3 +77,8 @@ http://your-jenkins-server:8080/
 
 * **Devanshu Vashishtha** - [web-codegrammer](https://github.com/web-codegrammer)
 
+## Project is Licensed Under the
+
+[MIT License](https://github.com/web-codegrammer/DevSecops-Test-Pipeline/blob/main/LICENSE)
+
+Issued to ```Devanshu Vashishtha``` | Copyright ©️ 2022-2023 [web-codegrammer](https://github.com/web-codegrammer)
