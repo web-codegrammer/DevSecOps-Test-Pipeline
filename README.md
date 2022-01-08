@@ -1,6 +1,6 @@
 # DevSecOps pipeline for Python Web App
 
-A Jenkins end-to-end DevSecOps pipeline for Python web application, hosted on AWS Ubuntu 18.04
+A Jenkins end-to-end DevSecOps pipeline for Python web application, hosted on AWS Ubuntu 20.04
 
 ![pipeline](https://user-images.githubusercontent.com/11514346/71473164-e57a5500-27cd-11ea-97cb-3c25f0266407.JPG)
 
@@ -65,7 +65,7 @@ http://your-jenkins-server:8080/
 - [x] Select appropriate security tools and sample python project
 - [x] Set up Jenkins server using docker (Dockerfile) and pipeline as code (Jenkinsfile) to run the checks
 - [x] Use ansible to create AWS ec2 test instance, configure the environment, and interact with it
-- [x] Hook up the web-app with ~~nginx~~+modsecurity providing WAF, ~~DDoS protection~~, reverse proxy capabilities
+- [x] Hook up the web-app with modsecurity providing WAF,reverse proxy capabilities
 - [x] Bootstrap with Jenkins API/configfile to setup and automatically create the pipeline job
 - [x] Carry out authenticated DAST scan on the python web app 
 
