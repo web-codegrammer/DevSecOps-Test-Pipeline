@@ -1,5 +1,5 @@
 FROM jenkins/jenkins:lts
-MAINTAINER pawan uppadey <pawan.uppadey@gmail.com>
+MAINTAINER devanshu vashishtha <sharmadevanshu452@gmail.com>
 
 #Install Jenkins plugin to make this pipeline work
 COPY plugins.txt /usr/share/jenkins/ref/plugins.txt
